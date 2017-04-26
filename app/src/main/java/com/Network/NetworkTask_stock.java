@@ -25,7 +25,7 @@ public class NetworkTask_stock extends AsyncTask<Map<String, String>, Integer, S
     protected String doInBackground(Map<String, String>... maps) { // 내가 전송하고 싶은 파라미터
 
 // Http 요청 준비 작업
-        HttpClient.Builder http = new HttpClient.Builder("POST", Scan.localUrl+Scan.stockUpdate);
+        HttpClient.Builder http = new HttpClient.Builder("POST", Scan.selectedUrl+Scan.stockUpdate);
 
 // Parameter 를 전송한다.
         http.addAllParameters(maps[0]);

@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="shop_type">
-        <item >편의점</item>
-        <item >PC방</item>
-    </string-array>
-    <string-array name="convenience_vendor">
-        <item >7Eleven</item>
-        <item >CU</item>
-        <item >GS25</item>
-        <item >Ministop</item>
-        <item >편의점</item>
-    </string-array>
-    <string-array name="pc_vendor">
-    <item >아이센스</item>
-    <item >샹떼</item>
-    <item >PC방</item>
-    </string-array>
-    <string-array name="item_code">
-        <item >6924513900098</item>
-        <item >8886467100017</item>
-        <item >8801155730994</item>
-    </string-array>
-    <string-array name="shop_id">
+    <string-array name="item_count">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
         <item >4</item>
         <item >5</item>
         <item >6</item>
         <item >7</item>
-        <item >13</item>
-        <item >15</item>
-        <item >16</item>
-        <item >17</item>
+        <item >8</item>
+        <item >9</item>
+        <item >10</item>
     </string-array>
 </resources>

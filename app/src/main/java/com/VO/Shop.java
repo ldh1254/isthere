@@ -1,20 +1,19 @@
 package com.VO;
 
-import java.util.Date;
-
 /**
  * Created by Administrator on 2017-04-15.
  */
 
 public class Shop {
-    private int shop_id;
+    private String shop_id;
     private String shop_name;
     private double shop_lat;
     private double shop_lng;
     private String shop_type;
-    private Date shop_time;
+    private java.sql.Date shop_time;
     private String shop_info;
     private String shop_vendor;
+    private int shop_distance;
 
     public Shop(String shop_name, double shop_lat, double shop_lng, String shop_type, String shop_info, String shop_vendor) {
         this.shop_name = shop_name;
@@ -24,11 +23,22 @@ public class Shop {
         this.shop_info = shop_info;
         this.shop_vendor = shop_vendor;
     }
+    public Shop(String shop_id, String shop_name, double shop_lat, double shop_lng, String shop_type, java.sql.Date shop_time , String shop_info, String shop_vendor, int shop_distance) {
+        this.shop_id = shop_id;
+        this.shop_name = shop_name;
+        this.shop_lat = shop_lat;
+        this.shop_lng = shop_lng;
+        this.shop_type = shop_type;
+        this.shop_time = shop_time;
+        this.shop_info = shop_info;
+        this.shop_vendor = shop_vendor;
+        this.shop_distance = shop_distance;
+    }
 
-    public int getShop_id() {
+    public String getShop_id() {
         return shop_id;
     }
-    public void setShop_id(int shop_id) {
+    public void setShop_id(String shop_id) {
         this.shop_id = shop_id;
     }
     public String getShop_name() {
@@ -55,10 +65,10 @@ public class Shop {
     public void setShop_type(String shop_type) {
         this.shop_type = shop_type;
     }
-    public Date getShop_time() {
+    public java.sql.Date getShop_time() {
         return shop_time;
     }
-    public void setShop_time(Date shop_time) {
+    public void setShop_time(java.sql.Date shop_time) {
         this.shop_time = shop_time;
     }
     public String getShop_info() {
@@ -74,4 +84,11 @@ public class Shop {
         this.shop_vendor = shop_vendor;
     }
 
+    public int getShop_distance() {
+        return shop_distance;
+    }
+
+    public void setShop_distance(int shop_distance) {
+        this.shop_distance = shop_distance;
+    }
 }
